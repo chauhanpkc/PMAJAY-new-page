@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/googlefont.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PMAJAY</title>
+</head>
+<body>
+    <nav class="navbar navbar-top py-1 bg-light" id="top">
+        <div class="container-fluid">
+           <a class="navbar-brand d-none d-lg-flex align-items-center" href="https://socialjustice.gov.in/" target="_blank">
+              <img src="../images/government-logo.png" width="20" class="me-2">
+              <p class="m-0 lh-1 fs-7 text-dark">Ministry of Social Justice and Empowerment
+                 <br>Government of India
+              </p>
+           </a>
+           <div class="d-lg-inline-block d-flex align-items-center justify-content-between md-width100">
+              <div class="d-block">
+                 <a href="#navbarScroll" class="float-start me-2 bg-white rounded-circle border d-flex justify-content-center align-items-center skip-icon" data-bs-toggle="tooltip" data-bs-placement="left" title="" onclick="this.blur();" data-bs-original-title="Skip to Main Content">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" fill="000" viewBox="0 0 53 38">
+                       <path id="Shape_3_copy" data-name="Shape 3 copy" class="cls-1" d="M0,26.125V23.749L28.123,0,53,23.749v2.375L28.363,2.375ZM0,38V35.624L28.123,11.875,53,35.624V38L28.363,14.25Z"></path>
+                    </svg>
+                 </a>
+                 <a href="#" class="float-start me-2 bg-white rounded-circle border d-flex justify-content-center align-items-center opacity-75 skip-icon" data-bs-toggle="tooltip" data-bs-placement="left" title="" onclick="this.blur();" data-bs-original-title="Screen Reader Access">
+                 <img src="../images/screen-icon.png" alt="black and white" width="27">
+                 </a>   
+                 <a href="#" class="float-start opacity-75 black-white border rounded-circle" data-bs-toggle="tooltip" data-bs-placement="left" title="" onclick="this.blur();" data-bs-original-title="Page Black &amp; White">
+                    <img src="../images/black-white.png" alt="black and white" width="37px" height="37px">
+                 </a>
+                 <div class="btn-group float-start mx-2" role="group" aria-label="Button group with nested dropdown">
+                    <div class="btn-group" role="group" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Social Media Links">
+                       <button id="btnGroupDrop1" type="button" class="form-select rounded-pill" data-bs-toggle="dropdown" aria-expanded="false" onclick="this.blur();">
+                       <img src="../images/fb-icon.png" alt="facebook" width="15">
+                       <img src="../images/twitter-icon.png" alt="facebook" width="15">
+                       </button>
+                       <ul class="dropdown-menu border-0 bg-transparent" aria-labelledby="btnGroupDrop1">
+                          <li class="d-inline-block"><a target="_blank" href="https://www.facebook.com/goimsje"><img src="../images/fb-icon.png" alt="facebook" class="bg-white rounded-circle" width="40"></a></li>
+                          <li class="d-inline-block"><a target="_blank" href="https://twitter.com/msjegoi"><img src="../images/twitter-icon.png" alt="facebook" class="bg-white rounded-circle" width="40"></a></li>
+                       </ul>
+                    </div>
+                 </div>
+                 <div class="btn-group float-start me-2" role="group" aria-label="Button group with nested dropdown">
+                    <div class="btn-group" role="group" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Font size increase decrease">
+                       <button id="btnGroupDrop2" type="button" class="form-select rounded-pill" data-bs-toggle="dropdown" aria-expanded="false" onclick="this.blur();">
+                       T<span class="fs-7">T</span>
+                       </button>
+                       <ul class="dropdown-menu icon-chng border-0 bg-transparent mt-2" aria-labelledby="btnGroupDrop2">
+                          <li class="d-inline-block"><a href="#" class="rounded-circle bg-light text-dark border p-0 d-flex justify-content-center align-items-center font-sizer" id="plusBtn" onclick="plus()">A+</a></li>
+                          <li class="d-inline-block"><a href="#" class="rounded-circle bg-light text-dark border p-0 d-flex justify-content-center align-items-center font-sizer" id="defaultBtn">A</a></li>
+                          <li class="d-inline-block"><a href="#" class="rounded-circle bg-light text-dark border p-0 d-flex justify-content-center align-items-center font-sizer" id="minusBtn" onclick="minus()">A-</a></li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+              <a target="_blank" href="https://amritmahotsav.nic.in/" class="float-end d-lg-none">
+              <img src="../images/logo-amrit.png" alt="Azadi ka marit mahotsav" width="130">		
+              </a>
+              <a target="_blank" href="https://swachhbharat.mygov.in/" class="float-end me-2 d-none d-sm-block d-lg-none">
+              <img src="../images/swachh.png" alt="Ek kadam swachchhata ki wor" width="130">		
+              </a>
+           </div>
+        </div>
+     </nav>
+     <nav class="navbar py-1 d-none d-lg-block">
+        <div class="container-fluid">
+           <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="../images/logo.png" alt="central gov logo" width="90">
+              <div class="lh-1 fs-6 fw-ligh ms-2 text-dark">
+                 <p class="m-0 text-orangem-0 fw-bold mb-1">Pradhan Mantri Anusuchit Jaati Abhyuday Yojna<br>(PM-AJAY)</p>
+                 <p class="m-0 fs-7">Department of Social Justice &amp; Empowerment</p>
+                 <p class="m-0 fs-7">Government of India</p>
+              </div>
+           </a>
+           <div class="d-lg-inline-block d-flex align-items-center justify-content-between md-width100">
+              <a target="_blank" href="https://amritmahotsav.nic.in/" class="float-end">
+              <img src="../images/logo-amrit.png" alt="Azadi ka marit mahotsav" width="130">		
+              </a>
+              <a target="_blank" href="https://swachhbharat.mygov.in/" class="float-end me-2 d-none d-sm-inline">
+              <img src="../images/swachh.png" alt="Ek kadam swachchhata ki wor" width="130">		
+              </a>
+           </div>
+        </div>
+     </nav>
+     <nav class="navbar py-0 sticky-top navbar-dark main-color navbar-expand-lg">
+        <div class="container-fluid justify-content-lg-end">
+           <a class="navbar-brand d-flex align-items-center d-lg-none" href="#">
+              <img src="images/government-logo.png" alt="central gov logo" width="40">
+              <div class="lh-1 fs-6 fw-ligh ms-2 text-dark">
+                 <p class="m-0 text-white fw-bold mb-1 fs-7">Pradhan Mantri Anusuchit Jaati Abhyuday Yojna<br>(PM-AJAY)</p>
+                 <p class="m-0 fs-7">Department of Social Justice &amp; Empowerment.</p>
+                 <p class="m-0 fs-7">Ministry of Social Justice and Empowerment.</p>
+                 <p class="m-0 fs-7">Government of India.</p>
+              </div>
+           </a>
+           <button class="navbar-toggler shadow-none px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-lg-0 navbar-nav-scroll">
+                 <li class="nav-item">
+                    <a class="nav-link p-0 py-1 me-3 d-inline-block active" href="../index.html">Home</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link py-1 me-3 d-inline-block dropdown-toggle " href="#" id="Sector-Overview" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu mt-0" aria-labelledby="Sector-Overview">
+                       <li><a class="dropdown-item " href="#" title="About Scheme">About Scheme</a></li>
+                       <li><a class="dropdown-item" href="https://socialjustice.gov.in/" target="_blank">Meet the Ministers</a></li>
+                    </ul>
+                 </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link py-1 me-3 d-inline-block dropdown-toggle" href="" id="navbar-1236" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reports</a>
+                    <ul class="dropdown-menu mt-0" aria-labelledby="navbar-1236">
+                       <li><a class="dropdown-item" href="#" target="_blank" title="Financial Progress(PDF)">Financial Progress</a></li>
+                       <!--<li><a class="dropdown-item" href="#" title="Physical Progress">Physical Progress1</a></li>-->
+                       <li><a class="dropdown-item" href="#" title="Funds Release">Funds Released</a></li>
+                       <li><a class="dropdown-item" href="#" target="_blank" title="AAP Status(PDF)">AAP Status</a></li> 
+                       <li><a class="dropdown-item" href="#" title="Covered States/Districts">Covered States/Districts</a></li> 
+                    </ul>
+                 </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link py-1 me-3 d-inline-block dropdown-toggle " href="#" id="Sector-Overview" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>
+                    <ul class="dropdown-menu mt-0" aria-labelledby="Sector-Overview">
+                       <li><a class="dropdown-item " href="#" title="Photographs">Photographs</a></li>
+                       <li><a class="dropdown-item " href="#" title="Videos">Videos</a></li>
+                    </ul>
+                 </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link py-1 me-3 d-inline-block dropdown-toggle" href="#" id="navbar-1271" role="button" data-bs-toggle="dropdown" aria-expanded="false">Downloads</a>
+                    <ul class="dropdown-menu mt-0" aria-labelledby="navbar-1271">
+                       <li><a class="dropdown-item" href="#" title="Flow Chart">Flow Chart</a></li>
+                       <li><a class="dropdown-item" target="_blank" href="#" title="Guidelines(PDF)">Guidelines</a></li>
+                       <li><a class="dropdown-item" href="#" title="Circulars">Circulars</a></li>
+                       <li><a class="dropdown-item" href="#" title="SAN">Single Nodal Agency (SNA) </a></li>
+                        <li><a class="dropdown-item" href="#" title="Sanction Orders">Sanction Orders</a></li>
+                         <li><a class="dropdown-item" target="_blank" href="#" title="PAC Meeting Minutes">PAC Meeting Minutes</a></li>
+                         <li><a class="dropdown-item" target="_blank" href="#" title="Utilization Certificate GFR 12-C">Utilization Certificate</a></li>
+                         <!--li><a class="dropdown-item" target="_blank" href="https://pmajay.dosje.gov.in/Writereaddata/Tentative-Notional-Allocation-for-the-year-2022-23.pdf" title="Notional Allocation(PDF)">Notional Allocation</a></li-->
+                         <li><a class="dropdown-item" href="#" title="Notional Allocation">Notional Allocation</a></li>
+                      
+                       <li><a class="dropdown-item" target="_blank" href="#" title="Implementation Status(PDF)">Implementation Status</a></li>
+                       <!-- <li><a class="dropdown-item" target="_blank" href="https://pmajay.dosje.gov.in/Writereaddata/PM-Ajay-communicating-Notional-Allocation-for-2020-final.pdf" title="Notional Allocation(PDF)">Notional Allocation</a></li> -->   
+                       <li><a class="dropdown-item" href="#" target="_blank">Presentation about Scheme (PPT)</a></li>
+                    </ul>
+                 </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link py-1 me-3 d-inline-block dropdown-toggle" href="http://socialjustice.gov.in/whats-new/76762" id="navbar-76768" role="button" data-bs-toggle="dropdown" aria-expanded="false">MIS/PORTALS+</a>
+                    <ul class="dropdown-menu mt-0" aria-labelledby="navbar-76768">
+                       <li><a class="dropdown-item" href="http://pmagy.gov.in/" target="_blank">Pradhan Mantri Adarsh Gram Yojana (PMAGY)</a></li>
+                       <li><a class="dropdown-item" href="https://e-utthaan.gov.in/" target="_blank">E-Utthaan</a></li>
+                       <li><a class="dropdown-item" href="https://tcs.dosje.gov.in/" target="_blank">Top Class Education for SC Students(TCS)</a></li>
+                       <li><a class="dropdown-item" href="https://mpr.dosje.gov.in/" target="_blank">Monthly Progress Report (MPR)</a></li>
+                       <li><a class="dropdown-item" href="https://socialjustice.gov.in/" target="_blank">Department of Social Justice and Empowerment</a></li>
+                    </ul>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link p-0 py-1 me-3 d-inline-block " href="#">Contact Us</a>
+                 </li>
+                 
+                 <!--li class="nav-item">  
+                    <a class="nav-link d-inline-block p-1 rounded  border " href="https://pmajay.dosje.gov.in/institute/register">Institute Registration</a>
+                 </li-->
+              </ul>
+              
+                      
+              <!-- <a href="http://164.100.77.235/pmajay/admin/signin" class="btn rounded-pill border border-white bg-transparent text-white py-2 px-4 fs-7 fw-normal shadow-sm" target="_blank">Demo login</a> -->
+                   
+              <a href="#" class="btn rounded-pill border border-white bg-white text-orange ms-2 py-2 px-4 fs-7 fw-bold shadow-sm">Login</a>
+                    </div>
+        </div>
+     </nav>
+
+     <section id="formHolder">
+
+      <div class="row">
+
+         <!-- Brand Box -->
+         <div class="col-sm-5 brand ms-5">
+
+            <div class="heading">
+               <h5 class="fw-bold text-dark">Only following users should login:</h5>
+               <ul class="text-start fw-normal login-user-list mb-0">
+                <li class="position-relative mt-1">District checker/maker user of Grants-in-Aid</li> 
+                <li class="position-relative mt-1">State checker/maker user of Grants-in-Aid</li>
+                <li class="position-relative mt-1">District checker/maker user of Hostel</li>
+                <li class="position-relative mt-1">District user of Hostel</li> 
+                <li class="position-relative mt-1">State checker/maker user of Hostel</li> 
+                <li class="position-relative mt-1">State Institute</li>
+                <li class="position-relative mt-1">State university</li>
+                <li class="position-relative mt-1">Central Institute</li>
+                <li class="position-relative mt-1">Central University</li>
+             </ul>
+            </div>
+         </div>
+
+
+         <!-- Form Box -->
+         <div class="col-sm-5 form">
+
+            <!-- Login Form -->
+            <div class="form-peice">
+               <form class="" action="#" method="post">
+                  <div class="form-group">
+                     <label for="loginemail" class="text-dark">User ID</label>
+                     <input type="text" name="" id="" class="input1">
+                  </div>
+
+                  <div class="form-group">
+                     <label for="" class="text-dark">Password</label>
+                     <input type="password" name="" id="" class="input1">
+                  </div>
+
+                  <div class="CTA me-2">
+                     <a href="./dashboard/dashboard.html" class="btn btn-sm bg-info text-white me-3 py-2 px-5 rounded-pill">Login</a>
+                     <a href="#" class="switch text-dark active">Forgot Password</a>
+                  </div>
+               </form>
+            </div><!-- End Login Form -->
+
+
+            <!-- Forgot password -->
+            <div class="form-peice switched">
+               <form class="" action="#" method="post">
+
+                  <div class="form-group">
+                     <label for="name" class="text-dark">User ID</label>
+                     <input type="text" name="userID" id="name" class="input1">
+                  </div>
+
+                  <div class="form-group text-dark mt-4">
+                    OTP receive on
+                  </div>
+                  <div class="d-flex">
+                    <div class="d-flex">
+                      <input type="radio" name="otp" class="w-auto">
+                      <div class="ms-2 me-3 text-dark fs-7">Email</div>
+                    </div>
+                    <div class="d-flex">
+                      <input type="radio" name="otp" class="w-auto">
+                      <div class="ms-2 text-dark">Mobile</div>
+                    </div>
+                  </div>
+                  <div class="CTA mt-4">
+                     <a href="#" class="btn btn-sm bg-info text-white me-3 py-2 px-5 rounded-pill">Submit</a>
+                     <a href="#" class="switch text-dark active">Back to Login</a>
+                  </div>
+               </form>
+            </div><!-- End Forgot Password -->
+         </div>
+      </div>
+
+   </section>
+
+     <footer class="mt-2">
+        <div class="main-color">
+            <div class="container-fluid">
+                <div class="row">
+                    <ul class="my-2 text-center fs-7 footer-link">
+                        <li class="d-inline-block"><a class="text-white fw-light py-0 px-2" href="#">Home </a></li>
+                        <li class="d-inline-block"><a class="text-white fw-light py-0 px-2" href="#">About Us</a></li>
+                        <li class="d-inline-block"><a class="text-white fw-light py-0 px-2" href="#">Feedback / Suggestion / Help</a></li>
+                        <li class="d-inline-block"><a class="text-white fw-light py-0 px-2" href="#">Terms &amp; Conditions</a></li>
+                        <li class="d-inline-block"><a class="text-white fw-light py-0 px-2" href="#">Privacy Policy</a></li>
+                        <li class="d-inline-block"><a class="text-white fw-light py-0 px-2" href="#">Copyright Policy</a></li>
+                        <li class="d-inline-block"><a class="text-white fw-light py-0 px-2" href="#">Hyperlinking Policy</a></li>
+                        <li class="d-inline-block"><a class="text-white fw-light py-0 px-2" href="#">Web Information manager</a></li>
+                        <li class="d-inline-block"><a class="text-white fw-light py-0 px-2" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bg bg-secondary">
+        <div class="container-fluid">
+         <div class="d-flex justify-content-start align-items-center pt-4 pb-3">
+             <img src="../images/nic_logo.png" alt=" ">
+             <p class="flex-fill text-center text-white fw-light fs-7 mb-0">This site is designed, developed, hosted and maintained by National Informatics Centre,<br>Department of Social Justice and Empowerment, <br>Ministry of Social Justice and Empowerment,<br> Government of India</p>
+         </div>	
+        </div>
+        <hr class="footer-line my-2">
+        <div class="container-fluid">
+         <div class="d-flex justify-content-between">
+            <p class="text-white fw-light mb-2">No. of visitors : 
+                <b>73,247
+    </b>
+            </p>
+            <p class="text-white fw-light mb-2">Page last updated on : <b>5 Apr 2023</b></p>
+         </div>	
+        </div>
+       </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/customize.js"></script>
+    <script src="../login/js/form.js"></script>
+</body>
+</html>
