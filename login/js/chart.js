@@ -25,12 +25,27 @@ var options = {
 
   var options = {
     series: [{
-    name: 'Hostel',
+    name: 'Legacy',
     data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
   }, {
-    name: 'Grant inaid',
+    name: 'New Hostel',
     data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
-  }],
+  },{
+  name: 'Expansion',
+  data: [46, 63, 151, 58, 97, 15, 51, 14, 54]
+},
+{
+  name: '2nd Installment',
+  data: [46, 63, 151, 58, 97, 15, 51, 14, 54]
+},
+{
+  name: 'Repair and Maintenance',
+  data: [46, 63, 151, 58, 97, 15, 51, 14, 54]
+},
+{
+  name: 'one time Grant',
+  data: [46, 63, 151, 58, 97, 15, 51, 14, 54]
+}],
     chart: {
     type: 'bar',
     height: 350
@@ -55,7 +70,7 @@ var options = {
   },
   yaxis: {
     title: {
-      text: '$ (thousands)'
+      text: 'Numbers'
     }
   },
   fill: {
@@ -71,4 +86,26 @@ var options = {
   };
 
   var chart = new ApexCharts(document.querySelector("#chart1"), options);
+  chart.render();
+
+  //Third Chart
+  var options = {
+    series: [44, 55, 41, 17, 15],
+    chart: {
+    type: 'donut',
+  },
+  responsive: [{
+    breakpoint: 480,
+    options: {
+      chart: {
+        width: 200
+      },
+      legend: {
+        position: 'bottom'
+      }
+    }
+  }]
+  };
+
+  var chart = new ApexCharts(document.querySelector("#chart2"), options);
   chart.render();
