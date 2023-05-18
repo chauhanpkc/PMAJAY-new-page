@@ -282,27 +282,13 @@ body {
   
 
       /* side bar */
-
-      
-      
-      
-      
-     
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
+      .mcd-menu1{
+        background: #207ae0;
+      }
       .mcd-menu {
         list-style: none;
         padding: 0;
         margin: 0;
-        background: #FFF;
         /*height: 100px;*/
         border-radius: 2px;
         -moz-border-radius: 2px;
@@ -320,7 +306,7 @@ body {
         display: block;
         text-decoration: none;
         padding: 12px 20px;
-        color: #777;
+        color: #ffffff;
         /*text-align: center;
         border-right: 1px solid #E7E7E7;*/
         
@@ -359,23 +345,6 @@ body {
         font-size: 10px;
       }
       
-      /* .mcd-menu li a i, .mcd-menu li a strong, .mcd-menu li a small {
-        position: relative;
-        
-        transition: all 300ms linear;
-        -o-transition: all 300ms linear;
-        -ms-transition: all 300ms linear;
-        -moz-transition: all 300ms linear;
-        -webkit-transition: all 300ms linear;
-      } */
-      /* .mcd-menu li:hover > a i {
-          opacity: 1;
-          -webkit-animation: moveFromTop 300ms ease-in-out;
-          -moz-animation: moveFromTop 300ms ease-in-out;
-          -ms-animation: moveFromTop 300ms ease-in-out;
-          -o-animation: moveFromTop 300ms ease-in-out;
-          animation: moveFromTop 300ms ease-in-out;
-      } */
       .mcd-menu li:hover a strong {
           opacity: 1;
           -webkit-animation: moveFromLeft 300ms ease-in-out;
@@ -394,15 +363,11 @@ body {
       }
       
       .mcd-menu li:hover > a {
-        color: #2298e6;
+        color: #000;
       }
       .mcd-menu li a.active {
         position: relative;
         color: #2298e6;
-        /* border:0; */
-        /*border-top: 4px solid #e67e22;
-        border-bottom: 4px solid #e67e22;
-        margin-top: -4px;*/
         box-shadow: 0 0 5px #DDD;
         -moz-box-shadow: 0 0 5px #DDD;
         -webkit-box-shadow: 0 0 5px #DDD;
@@ -416,11 +381,6 @@ body {
       .mcd-menu li a.active:before {
         content: "";
         position: absolute;
-        /*top: 0;
-        left: 45%;
-        border-top: 5px solid #e67e22;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;*/
         
         /* == */
         top: 42%;
@@ -441,26 +401,7 @@ body {
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
       }
-      /* == */
       
-      /* @-webkit-keyframes moveFromTop {
-          from {
-              opacity: 0;
-              -webkit-transform: translateY(200%);
-              -moz-transform: translateY(200%);
-              -ms-transform: translateY(200%);
-              -o-transform: translateY(200%);
-              transform: translateY(200%);
-          }
-          to {
-              opacity: 1;
-              -webkit-transform: translateY(0%);
-              -moz-transform: translateY(0%);
-              -ms-transform: translateY(0%);
-              -o-transform: translateY(0%);
-              transform: translateY(0%);
-          }
-      } */
       @-webkit-keyframes moveFromLeft {
           from {
               opacity: 0;
@@ -522,7 +463,7 @@ body {
         /* == */
         left:280px;
         top: 0px;
-        border-left: 4px solid #2298e6;
+        border-left: 4px solid #000000;
         /* == */
       }
       .mcd-menu li ul:before {
@@ -537,7 +478,7 @@ body {
         /* == */
         top: 25px;
         left: -9px;
-        border-right: 5px solid #2298e6;
+        border-right: 5px solid #000000;
         border-bottom: 5px solid transparent;
         border-top: 5px solid transparent;
         /* == */
@@ -556,16 +497,7 @@ body {
       /*.mcd-menu li ul li {
         float: none;
       }*/
-      .mcd-menu li ul li a {
-        padding: 10px;
-        text-align: left;
-        border: 0;
-        border-bottom: 1px solid #EEE;
-        
-        /* == */
-        height: auto;
-        /* == */
-      }
+      
       .mcd-menu li ul li a i {
         font-size: 16px;
         display: inline-block;
@@ -596,59 +528,9 @@ body {
       
       
       
-      /*.mcd-menu li.float {
-        float: right;
-      }*/
-      .mcd-menu li a.search {
-        /*padding: 29px 20px 30px 10px;*/
-        padding: 10px 10px 15px 10px;
-        clear: both;
-      }
-      .mcd-menu li a.search i {
-        margin: 0;
-        display: inline-block;
-        font-size: 18px;
-      }
-      .mcd-menu li a.search input {
-        border: 1px solid #EEE;
-        padding: 10px;
-        background: #FFF;
-        outline: none;
-        color: #777;
-        
-        /* == */
-        width:170px;
-        float:left;
-        /* == */
-      }
-      .mcd-menu li a.search button {
-        border: 1px solid #2298e6;
-        /*padding: 10px;*/
-        background: #2298e6;
-        outline: none;
-        color: #FFF;
-        margin-left: -4px;
-        
-        /* == */
-        float:left;
-        padding: 10px 10px 11px 10px;
-        /* == */
-      }
-      .mcd-menu li a.search input:focus {
-        border: 1px solid #2298e6;
-      }
       
       
-      .search-mobile { 
-        display:none !important;
-        background:#2298e6;
-        border-left:1px solid #2298e6;
-        border-radius:0 3px 3px 0;
-      }
-      .search-mobile i { 
-        color:#FFF; 
-        margin:0 !important;
-      }
+      
       
       
       @media only screen and (min-width: 960px) and (max-width: 1199px) {
