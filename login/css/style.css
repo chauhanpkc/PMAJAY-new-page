@@ -275,6 +275,7 @@ body {
       .card {
         line-height: 1.25rem;
         color: #000;
+        z-index: -1;
     }
       .card-raised{
         border:none;
@@ -448,7 +449,6 @@ body {
         min-width: 200px;
         padding: 0;
         margin: 0;
-        background: #FFF;
         /*border-top: 4px solid #e67e22;*/
         opacity: 0;
         visibility: hidden;
@@ -458,12 +458,12 @@ body {
         -moz-transition: all 300ms linear;
         -webkit-transition: all 300ms linear;
         /*top: 130px;*/
-        z-index:;
         
         /* == */
         left:280px;
         top: 0px;
         border-left: 4px solid #000000;
+        background: #207ae0;
         /* == */
       }
       .mcd-menu li ul:before {
@@ -507,7 +507,7 @@ body {
         left: 230px;
         top: 0;
         border: 0;
-        border-left: 4px solid #2298e6;
+        border-left: 4px solid #000000;
       }  
       .mcd-menu li ul li ul:before {
         content: "";
@@ -515,9 +515,9 @@ body {
         top: 15px;
         /*left: -14px;*/
         /* == */
-        left: -9px;
+        /* left: -9px; */
         /* == */
-        border-right: 5px solid #2298e6;
+        border-right: 5px solid #000000;
         border-bottom: 5px solid transparent;
         border-top: 5px solid transparent;
       }
