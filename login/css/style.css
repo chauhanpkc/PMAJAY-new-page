@@ -339,7 +339,6 @@ body {
       
       .mcd-menu li a strong {
         display: block;
-        text-transform: uppercase;
       }
       .mcd-menu li a small {
         display: block;
