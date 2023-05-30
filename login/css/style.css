@@ -268,7 +268,7 @@ body {
         margin-left: -62px;
       }
       
-      .my-container input {
+      .my-container{
         border-radius: 2rem;
         padding: 2px 20px;
       }
@@ -611,7 +611,7 @@ body {
           bottom:0px;
           left:0;
           background:#2298e6;
-          color:#FFF;
+          /* color:#FFF; */
           min-width:100%;
           text-transform:lowercase;
           font-weight:normal;
@@ -687,7 +687,7 @@ body {
           bottom:0px;
           left:0;
           background:#2298e6;
-          color:#FFF;
+          /* color:#FFF; */
           min-width:100%;
           text-transform:lowercase;
           font-weight:normal;
@@ -738,5 +738,44 @@ body {
           font-size:14px;
         }
           
+      }
+
+      /* skill Institute */
+      .skill{
+        
+        gap: 30px;
+        
+      }
+      .inputBox{
+        position: relative;
+      }
+      .inputBox input{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #000;
+        /* background: #1d2b3a; */
+        border-radius: 5px;
+        outline: none;
+        /* color: #fff; */
+        font-size: 1.25em;
+        
+      }
+      .skill-institute{
+        position: absolute;
+        pointer-events: none;
+        left: 0;
+        padding: 10px;
+        color: #000;
+        text-transform: uppercase;
+        transition: 0.5s;
+      }
+      .inputBox input:valid ~ .skill-institute,
+      .inputBox input:focus ~ .skill-institute
+      {
+        color: #fff;
+        transform: translateX(10px) translateY(-7px);
+        font-size: 1em;
+        padding: 0 10px;
+        background: #207ae0;
       }
       

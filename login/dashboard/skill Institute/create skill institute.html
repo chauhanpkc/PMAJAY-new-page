@@ -11,7 +11,7 @@
     <!-- BOX ICONS CSS-->
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
     <!-- custom css -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/login/css/style.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
@@ -169,170 +169,91 @@
             </div>
         </nav>
         <!--End Top Nav -->
-        <h3 class="text-dark p-3">PMAJAY</h3>
-        <div class="row px-4">
-            <div class="d-flex">
-                <div class="col-md-3 me-3">
-                    <label class="fw-bold">Financial Year</label>
-                    <select class="form-control" name="fin_year" id="fin_year">
-                        <option value="2023-2024">2023-2024</option>
-                        <option value="2022-2023">2022-2023</option>
-                        <option value="2021-2022">2021-2022</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label class="fw-bold">Type of Intervention</label>
-                    <select class="form-control" name="intervention" id="intervention">
-                        <option value="111">All </option>
-                        <option value="1">Income Generation Activity</option>
-                        <option value="3">Infrastructure Development</option>
-                        <option value="2">Skill Development</option>
-                    </select>
-                </div>
+        
+        <fieldset class="container-fluid">
+        <legend class=" p-3 bg-secondary text-white rounded fs-bold text-centers">Add New Skill Institute</legend>
+        <div class="row shadow-sm">
+            <div class="inputBox col-md-6 mt-3">
+                <input type="text" class="" required="required">
+                <span class="skill-institute ms-4 rounded">State</span>
             </div>
-            <div class="row mt-4">
-                <div class="col-md-3 col-sm-4 col-sm-6 mb-5">
-                    <div class="card card-raised border-start border-primary border-4 shadow-lg">
-                        <div class="card-body px-4">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div class="me-2">
-                                    <div class="display-5">1</div>
-                                    <div class="fw-bold">No. of Draft Projects</div>
-                                </div>
-                                <div class="rounded-circle py-1 px-2 bg-primary text-white"><i
-                                        class="material-symbols-outlined">draft</i></div>
-                            </div>
-                            <div class="card-text">
-                                <div class="d-inline-flex align-items-center">
-                                    <!-- <i class="material-symbols-outlined icon-xs text-success">draft</i> -->
-                                    <!-- <div class="caption text-success fw-500 me-2">3%</div>
-                                <div class="caption">from last month</div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 mb-5">
-                    <div class="card card-raised border-start border-warning border-4 shadow-lg">
-                        <div class="card-body px-4">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div class="me-2">
-                                    <div class="display-5">0</div>
-                                    <div class="fw-bold">No. of Pending Projects</div>
-                                </div>
-                                <div class="rounded-circle py-1 px-2 bg-warning text-white"><i
-                                        class="material-symbols-outlined">pending</i></div>
-                            </div>
-                            <div class="card-text">
-                                <div class="d-inline-flex align-items-center">
-                                    <!-- <i class="material-icons icon-xs text-success">pending</i> -->
-                                    <!-- <div class="caption text-success fw-500 me-2">3%</div>
-                                <div class="caption">from last month</div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 mb-5">
-                    <div class="card card-raised border-start border-secondary border-4 shadow-lg">
-                        <div class="card-body px-4">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div class="me-2">
-                                    <div class="display-5">0</div>
-                                    <div class="fw-bold">No. of Forwarded Projects</div>
-                                </div>
-                                <div class="rounded-circle py-1 px-2 bg-secondary text-white"><i
-                                        class="material-symbols-outlined">fast_forward</i></div>
-                            </div>
-                            <div class="card-text">
-                                <div class="d-inline-flex align-items-center">
-                                    <!-- <i class="material-icons icon-xs text-success">arrow_upward</i>
-                                <div class="caption text-success fw-500 me-2">3%</div>
-                                <div class="caption">from last month</div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 mb-5">
-                    <div class="card card-raised border-start border-success border-4 shadow-lg">
-                        <div class="card-body px-4">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <div class="me-2">
-                                    <div class="display-5">2</div>
-                                    <div class="fw-bold">No. of Sanctioned Projects</div>
-                                </div>
-                                <div class="rounded-circle py-1 px-2 bg-success text-white"><i
-                                        class="material-symbols-outlined">done</i></div>
-                            </div>
-                            <div class="card-text">
-                                <div class="d-inline-flex align-items-center">
-                                    <!-- <i class="material-icons icon-xs text-success">arrow_upward</i>
-                                <div class="caption text-success fw-500 me-2">3%</div>
-                                <div class="caption">from last month</div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="inputBox col-md-6 mt-3">
+                <input type="text"class="" required="required">
+                <span class="skill-institute ms-4 rounded">District</span>
             </div>
-            <div class="col-md-4 mt-4">
-                <div class="card shadow-sm h-100">
-                    <div class="card-header">Pie Graph</div>
-                    <div class="card-body" id="chart"></div>
-                </div>
+            <div class="inputBox col-md-4 mt-5">
+                <input type="text" class="" required="required">
+                <span class="skill-institute ms-4 rounded">Institute Name</span>
             </div>
-            <div class="col-md-8 mt-4">
-                <div class="card shadow-sm">
-                    <div class="card-header">Hostel</div>
-                    <div class="card-body" id="chart1"></div>
-                </div>
+            <div class="inputBox col-md-4 mt-5">
+                <input type="text" class="" required="required">
+                <span class="skill-institute ms-4 rounded">Institute Address</span>
             </div>
-            <div class="col-md-4 mt-4">
-                <div class="card shadow-sm">
-                    <div class="card-header">Intervention</div>
-                    <div class="card-body" id="chart2"></div>
-                </div>
+            <div class="inputBox col-md-4 mt-5">
+                <input type="text" class="" required="required">
+                <span class="skill-institute ms-4 rounded">Pin Code</span>
             </div>
-            <div class="col-md-4 mt-4">
-                <div class="card shadow-sm h-100">
-                    <div class="card-header">Report</div>
-                    <div class="card-body">
-                        <div class="text-center">
-                            <img src="/images/building (2).png" alt="" srcset="" class="mb-5">
-                            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolore voluptatem nisi
-                                maiores laborum ad corporis facilis, nemo accusantium alias blanditiis soluta saepe fuga
-                                nulla qui sequi deserunt aut. Nemo unde porro reprehenderit, hic similique natus, quod,
-                                voluptatem possimus temporibus tenetur ipsam cum nihil voluptates ut labore repudiandae
-                                minima soluta!</p>
-                        </div>
-                    </div>
-                </div>
+            <table class="table table-bordered mt-5">
+                <thead>
+                    <tr>
+                        <th>Institute Course</th>
+                        <th>Sector</th>
+                        <th>Sub Sector</th>
+                        <th>Course</th>
+                        <th>Sub Course [Code]</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select name="" id="" class="form-control">
+                                    <option value="">Course</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="" id="" class="form-control">
+                                    <option value="">Sector</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="" id="" class="form-control">
+                                    <option value="">Sub Sector</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="" id="" class="form-control">
+                                    <option value="">Course</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="" id="" class="form-control">
+                                    <option value="">Sub Course</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </thead>
+            </table>
+            <div class="inputBox col-md-4 mt-4">
+                <input type="text" class="" required="required">
+                <span class="skill-institute ms-4 rounded">E-mail</span>
             </div>
-            <div class="col-md-4 mt-4">
-                <div class="card shadow-sm h-100">
-                    <div class="card-header">Department</div>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus illo nobis
-                            mollitia quos expedita iusto sequi deserunt vitae autem aspernatur dolores ullam ipsum animi
-                            praesentium a quam non voluptate distinctio, optio quidem laudantium pariatur. Nesciunt
-                            iusto ut ratione adipisci placeat. Nesciunt quidem animi veniam deleniti aliquid error nam
-                            quibusdam laboriosam dignissimos, voluptates at inventore nostrum impedit officia
-                            distinctio? Saepe asperiores ad, cumque eaque deleniti aspernatur aut facilis quis, nostrum
-                            harum repudiandae commodi eum ipsa consequatur minus laboriosam similique dignissimos
-                            accusamus dolorem omnis iste perspiciatis? Officia deserunt aperiam, doloribus impedit animi
-                            nesciunt! Blanditiis modi ipsum dicta ab, quia ex! Animi!</p>
-                    </div>
-                </div>
+            <div class="inputBox col-md-4 mt-4">
+                <input type="text" class="" required="required">
+                <span class="skill-institute ms-4 rounded">Mobile Number</span>
+            </div>
+            <div class="inputBox col-md-4 mt-4 mb-4">
+                <input type="text" class="" required="required">
+                <span class="skill-institute ms-4 rounded">Landline</span>
             </div>
         </div>
+        </fieldset>
     </div>
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
-    <script src="../js/dashboard.js"></script>
+    <script src="../skill Institute/skill institute.js"></script>
     <script src="/assets/js/apexchart.js"></script>
     <script src="../js/chart.js"></script>
 </body>
