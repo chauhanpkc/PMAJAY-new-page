@@ -27,10 +27,12 @@ var options = {
     series: [{
     name: 'Legacy',
     data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
-  }, {
-    name: 'New Hostel',
-    data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
-  },{
+  }, 
+{
+  name: 'New Hostel',
+  data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
+},
+{
   name: 'Expansion',
   data: [46, 63, 151, 58, 97, 15, 51, 14, 54]
 },
