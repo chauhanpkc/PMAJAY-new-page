@@ -285,6 +285,7 @@ body {
       /* side bar */
       .mcd-menu1{
         background: #207ae0;
+        z-index: 100000;
       }
       .mcd-menu {
         list-style: none;
@@ -757,7 +758,7 @@ body {
         outline: none;
         font-size: 1.25em;
         border: none;
-        border-bottom: 2px solid #207ae0;
+        border-bottom: 3px solid #207ae0;
         border-radius: 0;
         
       }
