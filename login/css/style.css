@@ -753,11 +753,12 @@ body {
         width: 100%;
         padding: 10px;
         border: 1px solid #000;
-        /* background: #1d2b3a; */
         border-radius: 5px;
         outline: none;
-        /* color: #fff; */
         font-size: 1.25em;
+        border: none;
+        border-bottom: 2px solid #207ae0;
+        border-radius: 0;
         
       }
       .skill-institute{
@@ -773,7 +774,7 @@ body {
       .inputBox input:focus ~ .skill-institute
       {
         color: #fff;
-        transform: translateX(10px) translateY(-7px);
+        transform: translateX(10px) translateY(-10px);
         font-size: 1em;
         padding: 0 10px;
         background: #207ae0;
